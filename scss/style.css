@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Inter-Bold';
+  src: local("Inter-Bold"), local("Inter-Bold"), url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Inter-Medium';
+  src: local("Inter-Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Inter-Regular';
+  src: local("Inter-Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: local("Inter-SemiBold"), local("Inter-Medium"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Muli-Regular", sans-serif;
+  font-size: 16px;
+  color: #252733;
+  background-color: #F7F8FC; }
+
+a {
+  text-decoration: none;
+  font-family: inherit; }
+
+h1 {
+  font-family: 'Inter-Medium', sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: normal; }
+
+section {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: #00a3a3; }
+  section .section__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 40px);
+    box-sizing: border-box;
+    padding: 24px 5.7%; }
+    section .section__wrap .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 526px; }
+      section .section__wrap .main-block h1 {
+        margin-bottom: 60px;
+        text-align: left; }
+      section .section__wrap .main-block p {
+        font-family: 'Inter-Regular', sans-serif;
+        font-size: 16px;
+        color: white;
+        margin-bottom: 20px; }
+      section .section__wrap .main-block .button-box {
+        margin-top: 70px; }
+
+.button-box {
+  display: flex;
+  align-items: center; }
+
+a.logo {
+  font-family: 'Inter-Bold', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.5; }
+
+a.button, button.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 223px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: 'Inter-Medium', sans-serif;
+  color: white;
+  font-size: 14px;
+  margin-right: 20px; }
+
+a.link {
+  font-family: 'Inter-SemiBold', sans-serif;
+  font-size: 14px;
+  color: white;
+  margin-right: 20px;
+  line-height: 1.7; }
+
+@media screen and (max-width: 640px) {
+  section .section__wrap {
+    height: 100vh; }
+    section .section__wrap .main-block .button-box {
+      margin-top: 20px; }
+    section .section__wrap .main-block h1 {
+      margin-bottom: 30px; }
+
+  .button-box {
+    flex-direction: column; }
+    .button-box a.button, .button-box button.button {
+      margin-bottom: 15px; } }
+@media screen and (max-width: 320px) {
+  section .section__wrap .main-block h1 {
+    font-size: 16px; }
+  section .section__wrap .main-block p {
+    font-size: 12px;
+    margin-bottom: 8px; } }
+
+/*# sourceMappingURL=style.css.map */
